@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
-       
+      <header> 
     
     <h2>Day 1 - 10/06/2024</h2>
         <h1>THIS IS MY FIRST PROJECT</h1>
@@ -23,6 +23,8 @@
 <p>This is the beginning of my journey to become a full stack developer</p>
 <!--Paragraph tag-->
 <!--comment tag-->
+
+</header>
 
 <hr>
 <!--Horizontal rule-->
@@ -45,13 +47,14 @@ Ratione aspernatur fugiat voluptas sint accusamus, aliquid perferendis delectus 
 <!-- NAV Element-->
  <nav>
     <ul>
-        <li><a href="#Learn HTML">Learn HTML</a></li>
-        <li><a href="#Visit places">Visit PLeaces</a></li>        
+        <li><a href="#LearnHTML">Learn HTML</a></li>
+        <li><a href="#Visitplaces">Visit PLeaces</a></li>        
 
     </ul>
  </nav>
 
-<section id="Learn HTML">
+<section id="LearnHTML"> <!-- If we use a SECTION Element we should add a heading to it. So instead we can use the DIV element which do not need a heading-->
+    <h3>I am ready to learn HTML</h3>
 <p>Let me tell you how:</p>
 <ol> <!-- Ordered list-->
     <li>I learn more about web development.</li>
@@ -60,7 +63,8 @@ Ratione aspernatur fugiat voluptas sint accusamus, aliquid perferendis delectus 
 </ol>
 </section>
 
-<section id="Visit places">
+<section id="Visitplaces">
+    <h3>My vacation list</h3>
 <p>The Places i would like to visit in the future are:</p>
 <ul> <!-- Unordered list-->
     <li>USA</li>
@@ -89,6 +93,88 @@ Ratione aspernatur fugiat voluptas sint accusamus, aliquid perferendis delectus 
     <p>
         <a href="#">Back To Top</a>
     </p>
+
+
+    <h2>Day 3 - 12/06/2024</h2>
+
+<!-- Link items-->
+
+<ul>
+    <li>
+        Download an <a href="html5.253x256.png" download="">HTML5 Favicon</a> <!-- Download attribute-->
+    </li>
+
+    <li>
+        Contact me at <a href="mailto:random@email.com">My Email Address</a> <!-- We dont use this anymore as this has become the thing of the past.-->
+    </li>
+
+    <li>
+        Call me at <a href="tel:+1200515614155">this number</a> <!-- tel attribute-->
+    </li>
+
+    <li>
+        Open <a href="https://www.google.com/" target="_blank">Google</a> in a new tab <!-- Target attribute-->
+    </li>
+</ul>
+
+
+<h2>This taken from yesterdays practice</h2>
+<section id="LearnHTML"> 
+    <h3>I am ready to learn HTML</h3>
+    <img src="IMG/html logo.png" alt="HTML Logo" title="This is the HTML Logo" width="300" height="300"> <!-- Image attribute--> <!-- The title attribute in image attribute will desplay whne we hover the cursor above the image ///  It is recommended to provide width and height attributes, as this is getting more popularity now a days (This is important for cummulative layout shift.)-->
+    <figure> <!-- This is an explae to explain that the figure element can be used for elements other than image element aswell.-->
+        <figcaption>
+            This is an Example of HTML5 code
+        </figcaption>
+        <p>
+           <code> <!-- This code element displays the html code on the webpage.-->
+            &lt;h1&gt;Hello World!!&lt;/h1&gt;
+           </code>
+        </p>
+    </figure>
+<p>Let me tell you how:</p>
+
+<ol> <!-- Ordered list-->
+    <li>I learn more about web development.</li>
+    <li>I plan out my schedule.</li>
+    <li>I practice daily</li>
+</ol>
+</section>
+
+<section id="Visitplaces">
+    <h3>My vacation list</h3>
+    <figure> <!-- This figure element represents the self-contained content-->
+    <img src="IMG/Andaman.jpg" alt="Andaman Island" title="This is the image of Andaman Island" width="1200" height="630" loading="lazy"> <!-- By default loading is set to eager and we will have to change it to lazy so that the browser loads it only when needed. -->
+<figcaption>Andaman beach area</figcaption> <!-- This figcaption element displays the caption below the image-->
+</figure>
+<p>The Places i would like to visit in the future are:</p>
+<ul> <!-- Unordered list-->
+    <li>USA</li>
+    <li>France</li>
+    <li>Turkey</li>
+</ul>
+</section>
+
+<br><br><br><br><br><!-- This more number of elemnts or attributes can be opened by adding multiply sign. For eg: This i created by typing br*5 and then enter-->
+
+<hr>
+<hr>
+<hr>
+<hr>
+<hr> <!-- This more number of elemnts or attributes can be opened by adding multiply sign. For eg: This i created by typing hr*5 and then enter-->
+
+<!-- Semantic Tags--> <!-- Nav Elements are semantic Elements-->
+
+<p>Semantic webpages should always have one or more header element, one main element and again one or more footer element</p>
+
+
+
+
+
+<!-- HTML Entities-->
+<!-- creating copy write symbol and my name-->
+
+<footer>&lt;&lt;&lt; <a href="about.html">Sajin Paul Rajan</a> &copy; &gt;&gt;&gt;</footer>
 
 </body>
 </html>
