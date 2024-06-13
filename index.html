@@ -119,9 +119,9 @@ Ratione aspernatur fugiat voluptas sint accusamus, aliquid perferendis delectus 
 
 
 <h2>This taken from yesterdays practice</h2>
-<section id="LearnHTML"> 
+<section id="LearnHTML5"> 
     <h3>I am ready to learn HTML</h3>
-    <img src="IMG/html logo.png" alt="HTML Logo" title="This is the HTML Logo" width="300" height="300"> <!-- Image attribute--> <!-- The title attribute in image attribute will desplay whne we hover the cursor above the image ///  It is recommended to provide width and height attributes, as this is getting more popularity now a days (This is important for cummulative layout shift.)-->
+    <img src="IMG/htmllogo.png" alt="HTML Logo" title="This is the HTML Logo" width="300" height="300"> <!-- Image attribute--> <!-- The title attribute in image attribute will desplay whne we hover the cursor above the image ///  It is recommended to provide width and height attributes, as this is getting more popularity now a days (This is important for cummulative layout shift.)-->
     <figure> <!-- This is an explae to explain that the figure element can be used for elements other than image element aswell.-->
         <figcaption>
             This is an Example of HTML5 code
@@ -141,7 +141,7 @@ Ratione aspernatur fugiat voluptas sint accusamus, aliquid perferendis delectus 
 </ol>
 </section>
 
-<section id="Visitplaces">
+<section id="MyVisitplaces">
     <h3>My vacation list</h3>
     <figure> <!-- This figure element represents the self-contained content-->
     <img src="IMG/Andaman.jpg" alt="Andaman Island" title="This is the image of Andaman Island" width="1200" height="630" loading="lazy"> <!-- By default loading is set to eager and we will have to change it to lazy so that the browser loads it only when needed. -->
@@ -168,13 +168,63 @@ Ratione aspernatur fugiat voluptas sint accusamus, aliquid perferendis delectus 
 <p>Semantic webpages should always have one or more header element, one main element and again one or more footer element</p>
 
 
+<h2>Day 4 - 13/06/2024</h2>
+<!-- On day 4 we have enclosed the copywrite symbol and its contents in paragraph tag -->
 
+<!--<aria-labelledby> .This aria-labelled by attribute is used when we have more than one NAV element in our webpage. This explains the system which nav element is important and what should be prioritzed (This will let the screen readers and other assistive technologies to prioritize). This aria-labelledby can be linked to a h2 element. For eg, the synatx is as follows: <nav aria-labelledby="primary-navigation"> <h2 id="primary navigation">Primary Navigation</h2>. We can use this simultaneously for other nav elements as well using the same synatax, bu twith different id name and other name. 
+    
+    At the same time if we do not have a h2 element to link, we can use it as the following synatx: <nav aria-label="primary-navigation"> and include items inside this and end by</nav> -->
+
+<!-- Next we can talk about article element. <article></article>. This can be used as an alternative for section element. Section element can be used generically but article element is something we can use when we have a title say for eg. a heading tag and etc..-->
+
+<!-- We can use many section elements inside an article element.-->
+
+<article>
+    <h2>I'm Ready to learn HTML</h2>
+    <section>
+        <h3>Learning HTML 5</h3>
+        <img src="IMG/htmllogo.png" alt="Html Logo" title="This is the logo of HTML5" loading="lazy" width="253" height="256">
+        <p>Here we learn more about HTML5 </p>
+    </section>
+
+    <section>
+        <h3>My favourite vacation spot</h3>
+        <img src="IMG/vacation.jpg" alt="Vacation Spot" title="My favourite vacation spot" loading="lazy" width="500" height="600">
+        <p>My favourite vacation spot is caribean</p>
+    </section>
+
+    <section>
+        <h3>My Daily Schedule</h3>
+        <p>Let me tell you how: </p>
+        <ol>
+            <li>.. I learn more about web development.</li>
+            <li>..I plan my schedule daily and work accordingly.</li>
+            <li>..I use resources from <abbr title="Mozilla Developer Network">MDN</abbr>.</li>
+        </ol>
+        <aside> <!-- Aside element is used to describe the main object of the website more shortly like a highlighter--> <!-- its a Semantic Element-->
+            <details> <!-- The detail element can be used for additional details that the user can open and close on demand. It can be used as a interactive widget. When we open it, it will expand and show the contnet within it.--> <!-- its a Semantic Element-->
+                <summary> <!-- The summary element defines visible heading for the details element. The heading can be clicked to view/hide the details.--> <!-- details and summary element always work together--> <!-- its a Semantic Element-->
+                    Guess the number of hours I code per day <!-- We can use mark element her to highlight a particular portion of this sentence.  Syntax- <mark></mark>-->
+                </summary>
+                <p>
+                    I start at <time datetime="17:00">5 pm </time> and code for almost <time datetime="PT5H"> <!-- This value is used for the duration-->five hours</time> per day. <!-- This time attribute used here should be used for semantic purposes, it will not make any change in the webpage but it will be useful for screen readers and other assistive technologies--> <!-- Check MDN to know more on its values-->
+                </p>
+            </details>
+        </aside>
+    </section>
+    <hr>
+
+</article>
 
 
 <!-- HTML Entities-->
 <!-- creating copy write symbol and my name-->
 
-<footer>&lt;&lt;&lt; <a href="about.html">Sajin Paul Rajan</a> &copy; &gt;&gt;&gt;</footer>
+<footer>
+    <p>
+        &lt;&lt;&lt; <a href="about.html">Sajin Paul Rajan</a> &copy; &gt;&gt;&gt;
+    </p>
+</footer>
 
 </body>
 </html>
