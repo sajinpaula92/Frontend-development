@@ -48,7 +48,8 @@ Ratione aspernatur fugiat voluptas sint accusamus, aliquid perferendis delectus 
  <nav>
     <ul>
         <li><a href="#LearnHTML">Learn HTML</a></li>
-        <li><a href="#Visitplaces">Visit PLeaces</a></li>        
+        <li><a href="#Visitplaces">Visit Places</a></li> 
+        <li><a href="#Contact">Contact Me</a></li>        
 
     </ul>
  </nav>
@@ -168,7 +169,7 @@ Ratione aspernatur fugiat voluptas sint accusamus, aliquid perferendis delectus 
 <p>Semantic webpages should always have one or more header element, one main element and again one or more footer element</p>
 
 
-<h2>Day 4 - 13/06/2024</h2>
+<h2>Day 4/session-1 - 13/06/2024</h2>
 <!-- On day 4 we have enclosed the copywrite symbol and its contents in paragraph tag -->
 
 <!--<aria-labelledby> .This aria-labelled by attribute is used when we have more than one NAV element in our webpage. This explains the system which nav element is important and what should be prioritzed (This will let the screen readers and other assistive technologies to prioritize). This aria-labelledby can be linked to a h2 element. For eg, the synatx is as follows: <nav aria-labelledby="primary-navigation"> <h2 id="primary navigation">Primary Navigation</h2>. We can use this simultaneously for other nav elements as well using the same synatax, bu twith different id name and other name. 
@@ -216,13 +217,95 @@ Ratione aspernatur fugiat voluptas sint accusamus, aliquid perferendis delectus 
 
 </article>
 
+<h3>Day 4/session-2 - 13/06/2024</h3>
 
-<!-- HTML Entities-->
+<!-- There are two different elements which we omit for now and learn them when we start learning CSS. No. 1 is DIV Element <div></div>. Ther is no semantic meaning to a div element. It is much like a section element without the semantic meaning. Div elements always need additional attriutes to convey its real use. It is a block element. No. 2 is the SPAN element <span></span->. This also do not have any semantic meaning.-->
+
+<!-- Learn about Tables-->
+<table>
+    <caption>My Daily Schedule</caption><!-- This element is very important for semantic meaning-->
+    <thead> <!-- This element is very important for semantic meaning-->
+    <tr>
+        <th>&nbsp;</th>
+        <th scope="col"> <!-- The scope attribute used here is purely for semantic meaning and it doeas nont provide any physcical change to the table. There is an another way to do is by addidng id attribute to the table head and then to different id name to the table data. It is complicated.-->
+            Time
+        </th>
+        <th scope="col"> <!-- The scope attribute used here is purely for semantic meaning and it doeas nont provide any physcical change to the table.-->
+            Activity
+        </th>
+    </tr>
+</thead>
+<tbody> <!-- This element is very important for semantic meaning-->
+    <tr>
+        <th scope="row">Morning</th> <!-- The scope attribute used here is purely for semantic meaning and it doeas nont provide any physcical change to the table.-->
+        <td>
+            <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+        </td>
+        <td>
+            Write code
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">Break</th> <!-- The scope attribute used here is purely for semantic meaning and it doeas nont provide any physcical change to the table.-->
+        <td>
+            <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+        </td>
+        <td>
+            Eat Lunch
+        </td>
+    </tr>
+    <tr> 
+        <th scope="row">Afternoon</th> <!-- The scope attribute used here is purely for semantic meaning and it doeas nont provide any physcical change to the table.-->
+        <td>
+            <time datetime="12:00">12pm</time>-<time datetime="17:00">05pm</time>
+        </td>
+        <td>
+            Study other courses
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">Evening</th> <!-- The scope attribute used here is purely for semantic meaning and it doeas nont provide any physcical change to the table.-->
+        <td rowspan="2">
+            All other Times
+        </td>
+        <td>Free Time</td>
+    </tr>
+    <tr>
+        <th scope="row">Night</th> <!-- The scope attribute used here is purely for semantic meaning and it doeas nont provide any physcical change to the table.-->
+        <td>Sleep</td>
+    </tr>
+</tbody>
+<tfoot> <!-- This element is very important for semantic meaning-->
+    <tr>
+        <td colspan="3">And that's what I do everyday, 5 days a week. Just eat,sleep and code</td>
+    </tr>
+</tfoot>
+</table> 
+<!-- Added a little bit of css to understand that as a table.-->
+
+<!-- So for we have learned a one way communication, that is only we are creating the information on the webpage, but now we are going to learn forms which allows users to provide information and we can use that information to have an interactive webpage.-->
+
+<!-- Learn about Forms-->
+<!-- Created a new nav link above in line number 52-->
+
+<article id="Contact">
+    <h2>Contact Me</h2>
+    <p>I'd really like to hear from you!!</p>
+    <form action="https://httpbin.org/get" method="get">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" placeholder="For eg. Jane" autocomplete="on" required autofocus> <!-- The id attribute value should always match to the for attribute value--> <!-- Autofocus attribute can be used for only one element in a form. Required attribute is always true, it means this field always required some information-->
+
+    </form>
+</article>
+
+
+
+
 <!-- creating copy write symbol and my name-->
 
 <footer>
     <p>
-        &lt;&lt;&lt; <a href="about.html">Sajin Paul Rajan</a> &copy; &gt;&gt;&gt;
+        &lt;&lt;&lt;<!-- These are HTML Entities--> <a href="about.html">Sajin Paul Rajan</a> &copy; &gt;&gt;&gt;
     </p>
 </footer>
 
